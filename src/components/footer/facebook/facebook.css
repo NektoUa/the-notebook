@@ -1,0 +1,13 @@
+#facebook {
+  width:60px;
+  height:60px;
+  flex-basis: auto;
+  flex-wrap: wrap;
+  transition: transform .3s;
+  padding: 0.5em 0.5em;
+  margin:0 auto;
+}
+
+#facebook:hover {
+transform: rotate(45deg) scale(1.3);  
+}  

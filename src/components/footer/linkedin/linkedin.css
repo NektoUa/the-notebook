@@ -1,0 +1,13 @@
+#linkedin {
+    width:60px;
+    height:60px;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    transition: transform .3s;
+    padding: 0.5em 0.5em;
+    margin:0 auto;
+  }
+  
+  #linkedin:hover {
+  transform: rotate(10deg) scale(1.3);  
+  } 
