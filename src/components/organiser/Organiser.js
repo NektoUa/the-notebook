@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Calendar from './Calendar';
+import Weather from './Weather';
 // import main from './Footer.module.css';
 
 export default class Organiser extends Component {
@@ -7,7 +8,8 @@ export default class Organiser extends Component {
         return (
             <div id="organiser">
                 <Calendar />
-
+                {/* <ToDo /> */}
+                {/* <Weather /> */}
             </div>
         );
     }
