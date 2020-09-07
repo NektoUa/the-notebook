@@ -12,7 +12,7 @@ export default class Footer extends Component {
                 <Label as='a' image>
                     <Facebook />
                 </Label>
-                <Label as='a' image>
+                <Label as='a' color='grey' image>
                     <LinkedIn />
                 </Label>
                 <Label as='a' image>
