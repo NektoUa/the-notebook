@@ -1,0 +1,28 @@
+.body {
+    margin: 20px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+  /* height: 25em; */
+}
+
+.header {
+            /* text-decoration: underline; */
+}
+.header:before {
+    content: '\263A';
+}
+
+.footer {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    font-size: 120%;
+    text-align: center;
+    background-color: rgb(78, 65, 65);
+    padding: 20px;
+}
+
+.parag {
+    font-size: 2rem;
+}

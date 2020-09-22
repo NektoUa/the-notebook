@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { List } from 'semantic-ui-react'
-// import main from './Footer.module.css';
+import { List, Header } from 'semantic-ui-react'
+import main from './List.module.css';
 
 export default class Lists extends Component {
     render() {
         return (
-            <div id="list">
+            <div className={main.body} >
+                <Header as='h3' className={main.header}>Your notes</Header>
                 <List bulleted>
                     <List.Item>Gaining Access</List.Item>
                     <List.Item>Inviting Friends</List.Item>

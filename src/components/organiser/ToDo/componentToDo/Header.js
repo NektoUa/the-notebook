@@ -6,7 +6,7 @@ export default class HeaderToDo extends Component {
     render() {
         return (
             <div>
-                <Header as='h3'>
+                <Header as='h4'>
                     You have ___ Todos
                     </Header>
 

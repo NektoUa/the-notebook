@@ -9,9 +9,9 @@ export default class App extends Component {
   render() {
     return (
       <div className='App container'>
-        <List />
-        <Note />
-        <Organiser />
+        <List id="list" />
+        <Note id="note" />
+        <Organiser id="organiser" />
         <Footer />
       </div>
     )

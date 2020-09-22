@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Container, Header } from 'semantic-ui-react'
-// import main from './Footer.module.css';
+import main from './Note.module.css';
 
 export default class Note extends Component {
     render() {
         return (
-            <div id="note">
+            <div className={main.body}>
                 <Container text>
-                    <Header as='h2'>Header</Header>
+                    <Header as='h2' className={main.header}>Header</Header>
                     <p>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
                         ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et
