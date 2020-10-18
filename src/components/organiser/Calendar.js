@@ -4,7 +4,7 @@ import DatePicker from 'rc-calendar/lib/Picker';
 import 'rc-calendar/assets/index.css';
 import moment from 'moment';
 
-class CalendarPage extends Component {
+export default class CalendarPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -36,4 +36,3 @@ class CalendarPage extends Component {
     }
 }
 
-export default CalendarPage;
