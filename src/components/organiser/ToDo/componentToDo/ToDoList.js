@@ -1,19 +1,27 @@
 import React, { Component } from 'react';
-import { List } from 'semantic-ui-react'
+import { List, Card, Feed } from 'semantic-ui-react'
+import Todo from './ToDoMap'
 
 
 export default class HeaderToDo extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            todos: this.props.tasks
+        }
+    }
+
     render() {
+        const todo = this.props.tasks.map((todo, index) => {
+            return <Todo content={todo} key={index} id={index} />
+        })
         return (
             <div>
-                <List bulleted>
-                    <List.Item>Gaining Access</List.Item>
-                    <List.Item>Inviting Friends</List.Item>
-                    <List.Item>                        Benefits
-                          </List.Item>
-                    <List.Item>Warranty</List.Item>
-                </List>
+                <Feed>
+                    {todo}
+                </Feed>
             </div>
         );
     }
 }
+

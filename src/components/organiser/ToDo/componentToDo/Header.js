@@ -1,16 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Header } from 'semantic-ui-react'
 
-
-export default class HeaderToDo extends Component {
-    render() {
-        return (
-            <div>
-                <Header as='h4'>
-                    You have ___ Todos
-                    </Header>
-
-            </div>
-        );
-    }
+const HeaderToDo = (props) => {
+    return (
+        <Header as='h4'>
+            You have {props.numTodos} Todos
+        </Header>
+    )
 }
+
+export default HeaderToDo
+
+

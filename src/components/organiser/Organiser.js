@@ -8,7 +8,7 @@ export default class Organiser extends Component {
     render() {
         return (
             <div className={main.body}>
-                <Weather />
+                {/* <Weather /> */}
                 <Calendar className={main.calendar} />
                 <ToDo />
             </div>

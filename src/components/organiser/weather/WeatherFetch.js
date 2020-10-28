@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Icon, Placeholder, Segment, Grid, List } from 'semantic-ui-react'
 
 function WeatherFetch() {
-    const key = 'APP__KEY';
+    const key = 'APP-KEY';
     const [name, setName] = useState('');
     const [feels_like, setFeelsLike] = useState('');
     const [mainTemp, setMainTemp] = useState('');
@@ -12,7 +12,7 @@ function WeatherFetch() {
     let imag = <img src={"http://openweathermap.org/img/wn/" + iconID + ".png"} width="10%" />;
     let celsiusTemp = mainTemp + '℃';
     useEffect(() => {
-        fetch('https://api.openweathermap.org/data/2.5/weather?id=687700&APPID=APP__KEY&units=metric')
+        fetch('https://api.openweathermap.org/data/2.5/weather?id=687700&APPID=APP-KEY&units=metric')
             .then(res => res.json())
             .then(data => {
                 console.dir(data);
