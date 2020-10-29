@@ -7,8 +7,13 @@ import { Input, Label, Menu, Grid, Card, Feed } from 'semantic-ui-react'
 
 export default class ToDo extends Component {
     state = {
-        tasks: ['task 1', 'task 2', 'nevecccccccccccc']
+        tasks: ['task', 'another task']
     };
+
+    handleSubmit = task => {
+        this.setState({ tasks: [...this.state.tasks, task] });
+    }
+
     render() {
         return (
             <div id="todo">
@@ -22,7 +27,9 @@ export default class ToDo extends Component {
                         <ToDoList tasks={this.state.tasks} />
                     </Card.Content>
                     <Card.Content>
-                        <Card.Header><Add /></Card.Header>
+                        <Card.Header>
+                            <Add onFormSubmit={this.handleSubmit} />
+                        </Card.Header>
                     </Card.Content>
                 </Card>
 
@@ -31,6 +38,7 @@ export default class ToDo extends Component {
         );
     }
 }
+
 
 {/* <Grid textAlign='left' columns={1}>
                     <Grid.Row>
